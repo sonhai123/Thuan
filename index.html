@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Hoàng Đức Thuận</title>
+
+    <style>
+        /* Cài đặt chung cho toàn trang */
+        body {
+            margin: 0;
+            /* Đổi màu nền sang tông xanh lá nhạt/trắng sữa tạo cảm giác tươi mát */
+            background-color: #f0fdf4; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        /* Phần Header */
+        header {
+            padding: 50px 20px 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 40px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 18px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Khu vực nội dung chính */
+        main {
+            padding: 30px 20px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* Thiết kế các thẻ (Card) */
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 6px solid #10b981; /* Điểm nhấn viền trái màu xanh lá */
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Tiêu đề trong thẻ */
+        .card h2 {
+            color: #047857;
+            font-size: 22px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Nội dung văn bản */
+        .card p {
+            margin: 10px 0;
+            font-size: 16.5px;
+            color: #4b5563;
+        }
+
+        /* Style cho các thông tin cá nhân */
+        .info-group {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 17px;
+            align-items: center;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #374151;
+            width: 130px;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            color: #111827;
+            font-weight: 500;
+        }
+
+        /* Style cho link Email và Số điện thoại */
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tương thích với điện thoại */
+        @media (max-width: 600px) {
+            header {
+                padding: 40px 15px 25px;
+            }
+            header h1 {
+                font-size: 30px;
+            }
+            .card {
+                padding: 20px;
+            }
+            .info-group {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 15px;
+            }
+            .info-label {
+                margin-bottom: 5px;
+                color: #6b7280;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hoàng Đức Thuận</h1>
+        <p>✨ Welcome to my profile ✨</p>
+    </header>
+
+    <main>
+
+        <!-- Mục 1: Thông tin cơ bản (Chỉ giữ lại những gì có trong ảnh) -->
+        <section class="card">
+            <h2>👤 Thông tin cá nhân</h2>
+            
+            <div class="info-group">
+                <div class="info-label">Họ và tên:</div>
+                <div class="info-value">Hoàng Đức Thuận</div>
+            </div>
+            
+            <div class="info-group">
+                <div class="info-label">Ngày sinh:</div>
+                <div class="info-value">24/09/2009</div>
+            </div>
+
+            <div class="info-group">
+                <div class="info-label">Số điện thoại:</div>
+                <div class="info-value"><a href="tel:0906121618">0906121618</a></div>
+            </div>
+
+            <div class="info-group">
+                <div class="info-label">Email:</div>
+                <div class="info-value"><a href="mailto:hoangducthuan2409@gmail.com">hoangducthuan2409@gmail.com</a></div>
+            </div>
+        </section>
+
+        <!-- Mục 2: Giới thiệu (Sáng tạo ngắn gọn, phù hợp tính cách) -->
+        <section class="card">
+            <h2>🚀 Đôi nét về mình</h2>
+            <p>Chào mọi người, mình là Thuận! Rất vui được kết nối với các bạn. Mình là một người yêu thích sự năng động, thích khám phá những điều mới lạ và luôn sẵn sàng học hỏi. </p>
+        </section>
+
+        <!-- Mục 3: Sở thích -->
+        <section class="card">
+            <h2>🎮 Sở thích</h2>
+            <p>
+                - Chơi game & giải trí cùng bạn bè.<br>
+                - Đá bóng và các hoạt động thể thao ngoài trời.<br>
+                - Tìm hiểu về công nghệ và máy tính.<br>
+                - Thưởng thức âm nhạc mỗi khi rảnh rỗi.
+            </p>
+        </section>
+
+        <!-- Mục 4: Mục tiêu -->
+        <section class="card">
+            <h2>🎯 Mục tiêu</h2>
+            <p>Hiện tại mình đang cố gắng hoàn thành thật tốt việc học, trau dồi thêm nhiều kỹ năng mềm để chuẩn bị cho tương lai. Ước mơ của mình là có thể tự lập, làm công việc mình yêu thích và có những trải nghiệm tuyệt vời cùng gia đình, bạn bè.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
